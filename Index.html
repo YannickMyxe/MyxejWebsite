@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<nav class="navbar navbar-default" role="navigation">
+  			<div class="container">
+  				<!-- Brand and toggle get grouped for better mobile display -->
+  				<div class="navbar-header">
+  					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+  						<span class="sr-only">Toggle navigation</span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  					</button>
+  					<div class="collapse navbar-collapse navbar-ex1-collapse">
+  					<ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+  							<a href="account.php" id="naam" data-toggle="dropdown"><b class="caret"></b></a>
+  							<ul class="dropdown-menu">
+                </ul>
+  						</li>
+            </li>
+              </ul>
+              </div>
+  				</div>
+
+  				<!-- Collect the nav links, forms, and other content for toggling -->
+  				<div class="collapse navbar-collapse navbar-ex1-collapse">
+  					<ul class="nav navbar-nav navbar-right">
+  						<li><a href="home.php">Home</a></li>
+              <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown">Spelers <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="spelers.php">Spelers</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown">Teams <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="teams.php">Teams</a></li>
+                  <?php
+                  if(isset($_SESSION["naam"]) && $_SESSION["naam"] != "")
+                  {
+                    echo "<li><a href='teammaken.php'>Team maken</a></li>
+                          <li><a href='teambeheren.php'>Team beheeren</a></li>";
+                  }
+                  else
+                  {
+                    echo "";
+                  }?>
+                </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown">Wedstrijden <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="Wedstrijden.php">Wedstrijden</a></li>
+                </ul>
+              </li>
+              <li><a href="spellen.php">Games</a></li>
+              <li class="dropdown">
+  							<a href="" class="dropdown-toggle" data-toggle="dropdown">Over ons<b class="caret"></b></a>
+  							<ul class="dropdown-menu">
+  								<li><a href="overons.php">Over ons</a></li>
+  								<li><a href="contacteerons.php">Contacteer ons</a></li>
+                  <li><a href="inschrijven.php">Inschrijven</a></li>
+  							</ul>
+  						</li>
+  					</ul>
+  				</div><!-- /.navbar-collapse -->
+  			</div>
+  		</nav>
+  	<body>
+		<!-- START SECTION -->
+  		<div class="section background text-center background-dark dark-bg">
+  			<div class="background-image" style="background: url(images/background.jpg) no-repeat center center; background-size: cover; opacity: .2;"></div>
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-12">
+  						<h2 id="Titel">Lan party</h2>
+  						<p class="lead">
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<!--/.section -->
+
+  		<!-- START SECTION -->
+  		<div class="section">
+  			<div class="container">
+  				<div class="row">
+            <div class="col-md-100">
+              <div class="service-block text-center">
+							<i class="fa fa-desktop"></i>
+  						<h2 class="section-title">Over ons</h2>
+  						<p class="section-description">Wil je meer weten over deze site of de maker van deze site?<br>
+                Klik dan op de link hieronder om er meer over te weten te komen.</p>
+  							<a href="overons.php" title="Learn More" class="btn btn-sm btn-primary">Meer info</a>
+              </div>
+  						</div><!--/.service-block-->
+  					</div>
+  				</div><!--/.row-->
+  			</div><!--/.container-->
+  		</div>
+  		<!--/.section -->
+
+      <!-- START SECTION -->
+  		<div class="section hero text-center background-primary dark-bg">
+  			<div class="background-image" style="background: url(images/background.jpg) no-repeat fixed center center; background-size: cover; opacity: .2;"></div>
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-12">
+  						<h3 class="text-uppercase letter-spacing-md font-weight-lg margin-zero"></h3>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<!--/.section -->
+
+
+      <!-- START SECTION -->
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-100">
+              <div class="service-block text-center">
+              <i class="fa fa-user-circle"></i>
+              <h2 class="section-title">Account</h2>
+              <p class="section-description">Heb je al een account? Wil je je gegevens bekijken?
+              dat kan! <br>
+              klik op de link hieronder en bekijk je gegevens.</p>
+                <a href="account.php" title="Learn More" class="btn btn-sm btn-primary">Meer info</a>
+              </div>
+              </div><!--/.service-block-->
+            </div>
+          </div><!--/.row-->
+        </div><!--/.container-->
+      </div>
+      <!--/.section -->
+
+      <!-- START SECTION -->
+      <div class="section hero text-center background-dark dark-bg">
+        <div class="background-image" style="background: url(images/background.jpg) no-repeat fixed center center; background-size: cover; opacity: .2;"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-uppercase letter-spacing-md font-weight-lg margin-zero"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/.section -->
+
+      <!-- START SECTION -->
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-100">
+              <div class="service-block text-center">
+              <i class="fa fa-gamepad"></i>
+              <h2 class="section-title">Wedstrijden</h2>
+              <p class="section-description">Bekijk alle wedstrijden die er gespeeld worden, alle ooit gespeelde wedstrijden. <br>
+                Heb je al een aaccount? Heb je al een wedstrijd gespeeld? Bekijk dan ook jouw gegevens </p>
+                <a href="naamloos/wedstrijden.php" title="Learn More" class="btn btn-sm btn-primary">Meer info</a>
+              </div>
+              </div><!--/.service-block-->
+            </div>
+          </div><!--/.row-->
+        </div><!--/.container-->
+      </div>
+      <!--/.section -->
+
+      <!-- START SECTION -->
+      <div class="section hero text-center background-dark dark-bg">
+        <div class="background-image" style="background: url(images/background.jpg) no-repeat fixed center center; background-size: cover; opacity: .2;"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-uppercase letter-spacing-md font-weight-lg margin-zero"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/.section -->
+
+  	</body>
+  </html>
